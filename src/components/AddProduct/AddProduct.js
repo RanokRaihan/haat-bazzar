@@ -16,7 +16,7 @@ const AddProduct = () => {
         setAddSuccess(false)
         const totalData = { ...data, imageURL: imageURL }
         // console.log(totalData);
-        const url = 'http://localhost:4000/addProduct';
+        const url = 'https://shielded-springs-39653.herokuapp.com/addProduct';
         fetch(url, {
             method: 'POST',
             headers: {

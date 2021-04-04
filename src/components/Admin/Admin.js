@@ -6,15 +6,18 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
     useRouteMatch,
     useLocation,
     NavLink
 } from "react-router-dom";
 import AddProduct from '../AddProduct/AddProduct';
 import ManageProduct from '../ManageProducts/ManageProduct';
+import useDocumentTitle from '../../useDocumentTitle';
 
 const Admin = () => {
+    //change title
+
+    useDocumentTitle('Haat-Bazar | Admin')
     let { path, url } = useRouteMatch();
 
     //assigning location variable

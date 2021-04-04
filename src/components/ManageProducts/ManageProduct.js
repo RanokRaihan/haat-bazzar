@@ -9,7 +9,7 @@ const ManageProduct = () => {
     const [loading, setLoading] = useState(true);
     const [deleteSuccess, setDeleteSuccess] = useState(false)
     useEffect(() => {
-        fetch('http://localhost:4000/allProducts')
+        fetch('https://shielded-springs-39653.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -18,7 +18,7 @@ const ManageProduct = () => {
     }, []);
     const deleteItem = (id) => {
         setDeleteSuccess(false);
-        fetch(`http://localhost:4000/deleteItem/${id}`, {
+        fetch(`https://shielded-springs-39653.herokuapp.com/deleteItem/${id}`, {
             method: 'DELETE'
         })
             .then(res => {

@@ -1,16 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { userContext } from '../../App';
+import useDocumentTitle from '../../useDocumentTitle';
 import './CheckOut.css';
 
 
 const CheckOut = () => {
+
+    //change title
+    useDocumentTitle('Checkout - HaatBazar')
     const [singleProduct, setSingleProduct] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const { id } = useParams();
     const { productName, price, _id } = singleProduct;
     useEffect(() => {
-        fetch(`http://localhost:4000/buyProduct/${id}`)
+        fetch(`https://shielded-springs-39653.herokuapp.com/buyProduct/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSingleProduct(data[0]);
@@ -30,7 +34,7 @@ const CheckOut = () => {
 
         }
         // console.log(totalData);
-        const url = 'http://localhost:4000/confirmOrder';
+        const url = 'https://shielded-springs-39653.herokuapp.com/confirmOrder';
         fetch(url, {
             method: 'POST',
             headers: {

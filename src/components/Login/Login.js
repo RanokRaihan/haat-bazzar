@@ -8,16 +8,16 @@ import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { userContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
+import useDocumentTitle from '../../useDocumentTitle';
 
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
 }
 
 const Login = () => {
+    //change title
+    useDocumentTitle('Login - HaatBazar')
     const provider = new firebase.auth.GoogleAuthProvider();
-
-
-
     //context
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
 

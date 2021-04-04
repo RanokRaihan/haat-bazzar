@@ -2,14 +2,17 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { userContext } from '../../App';
 import spinner from '../../images/spinner.gif';
+import useDocumentTitle from '../../useDocumentTitle';
 
 
 const Orders = () => {
+    //change title
+    useDocumentTitle('Your Orders | Haat-Bazar')
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [orderData, setOrderData] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch(`http://localhost:4000/orders?email=${loggedInUser.email}`, {
+        fetch(`https://shielded-springs-39653.herokuapp.com/orders?email=${loggedInUser.email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

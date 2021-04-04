@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
-import spinner from '../../images/spinner.gif'
+import spinner from '../../images/spinner.gif';
 import './Home.css';
 
 const Home = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:4000/allProducts')
+        fetch('https://shielded-springs-39653.herokuapp.com/allProducts')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
