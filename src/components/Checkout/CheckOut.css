@@ -1,0 +1,14 @@
+.checkout-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+.border-bottom {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 15px;
+}
+.left-side {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+}
