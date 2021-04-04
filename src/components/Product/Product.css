@@ -4,6 +4,8 @@
     padding: 10px;
     overflow: hidden;
     border-radius: 10px;
+    background: #fff;
+    border: 2px solid #f7861d;
 }
 .image-container {
     width: 100%;

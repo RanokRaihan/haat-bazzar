@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background: #f8ede4;
+}
 .mt-5 {
     margin-top: 60px !important;
 }

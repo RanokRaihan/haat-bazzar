@@ -6,10 +6,10 @@
 
 author: [Ranok Raihan](https://web.facebook.com/ranok.raihan.18/)
 
-[Live website link](https://easy-rides-bde6c.web.app)
+[Live website link](https://haat-bazar-167f4.web.app/)
 
 ### `Website Description`
 
-Hi. welcome to my website, Haat Bazar. this is a ecomerce website where ou can buy grocery products. in home page you will see all the products, their weight and price. if you click on the "buy now" button you will be redirected to log in page. you can also go to login page by clicking login button. you can see your order history also. thank you
+Hi. welcome to my website, Haat Bazar. this is a ecomerce website where ou can buy grocery products. in home page you will see all the products, their weight and price. if you click on the "buy now" button you will be redirected to log in page. you can also go to login page by clicking login button. you can see your order history also.
 
 ## Thank you

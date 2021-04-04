@@ -5,6 +5,8 @@
     margin: 35px auto;
     min-height: 300px;
     padding: 10px;
+    background: #fff;
+    border: 2px solid #f7861d;
 }
 .login-container h1 {
     margin: 20px auto;
