@@ -24,7 +24,7 @@ const ManageProduct = () => {
       setDeleteSuccess(true);
     });
 
-    // console.log(id);
+    // //console.log(id);
   };
   return (
     <div className='manage-product-container'>

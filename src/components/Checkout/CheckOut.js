@@ -16,7 +16,7 @@ const CheckOut = () => {
       .then((res) => res.json())
       .then((data) => {
         setSingleProduct(data[0]);
-        console.log(data[0]);
+        //console.log(data[0]);
       });
   }, [id]);
   const history = useHistory();
@@ -30,7 +30,7 @@ const CheckOut = () => {
       productID: _id,
       date: date,
     };
-    // console.log(totalData);
+    // //console.log(totalData);
     const url = "https://peaceful-thicket-62136.herokuapp.com/confirmOrder";
     fetch(url, {
       method: "POST",

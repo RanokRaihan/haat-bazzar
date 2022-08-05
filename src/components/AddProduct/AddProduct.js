@@ -13,7 +13,7 @@ const AddProduct = () => {
   const onSubmit = (data) => {
     setAddSuccess(false);
     const totalData = { ...data, imageURL: imageURL };
-    // console.log(totalData);
+    // //console.log(totalData);
     const url = "https://peaceful-thicket-62136.herokuapp.com/addProduct";
     fetch(url, {
       method: "POST",
@@ -23,7 +23,7 @@ const AddProduct = () => {
       body: JSON.stringify(totalData),
     }).then((res) => {
       setAddSuccess(true);
-      console.log(res);
+      //console.log(res);
     });
   };
 
@@ -34,21 +34,21 @@ const AddProduct = () => {
   const handleImageUpload = (event) => {
     setUploading(true);
     setAddSuccess(false);
-    // console.log(event.target.files[0]);
+    // //console.log(event.target.files[0]);
     const imageData = new FormData();
     imageData.set("key", "980e01a9db052c64c4ad9206ed943c46");
     imageData.append("image", event.target.files[0]);
     axios
       .post("https://api.imgbb.com/1/upload", imageData)
       .then((res) => {
-        console.log(res);
+        //console.log(res);
         setImageURL(res.data.data.display_url);
         setUploading(false);
 
-        // console.log(imageURL);
+        // //console.log(imageURL);
       })
       .catch((error) => {
-        console.log(error);
+        //console.log(error);
       });
   };
   return (

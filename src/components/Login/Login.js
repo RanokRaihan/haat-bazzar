@@ -35,7 +35,7 @@ const Login = () => {
       .auth()
       .signInWithPopup(provider)
       .then((result) => {
-        console.log(result);
+        //console.log(result);
         const { name, email, picture } = result.additionalUserInfo.profile;
         const signedInUser = {
           isSignedIn: true,
